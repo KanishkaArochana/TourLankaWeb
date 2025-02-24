@@ -98,3 +98,353 @@
 .fade {
     animation: fade 1.5s;
 }
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text {
+        font-size: 18px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* Services */
+.heading-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1rem));
+    gap: 1.5rem;
+    justify-content: center;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem; */
+    /* background-color: aquamarine; */
+}
+
+.services .box-container .box {
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    border: 4px purple solid;
+    border-radius: 20px;
+}
+
+.services .box-container .box:hover {
+    background-color: rgb(163, 122, 174);
+    color: white;
+}
+
+.services .box-container .box img {
+    height: 13rem;
+}
+
+.services .box-container .box h3 {
+    color: black;
+    font-size: 2rem;
+    margin-top: 4px;
+}
+
+
+/* home-about */
+
+.home-about {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+}
+
+.home-about .image {
+    max-width: 30%;
+}
+
+.home-about .image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.home-about .content {
+    width: 60%;
+    padding: 2rem;
+    background-color: #dadcda;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-about .content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    line-height: 1.8;
+    color: #333;
+}
+
+.home-about .content .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-about .content .btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Home Pakage Section */
+
+.home-packages{
+    margin-top: 3rem;
+    padding-top: 1px;
+    padding-bottom: 2rem;
+    background-color: #dadcda;
+}
+
+.home-packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1rem));
+    gap: 3rem;
+    justify-content: center;
+
+}
+
+.home-packages .box-container .box .image {
+    height: 18rem;
+    overflow: hidden;
+    margin-bottom: -1.5rem;
+}
+
+.home-packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: .2s linear;
+}
+
+.home-packages .box-container .box .content {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.home-packages .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.home-packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: black;
+    margin-top: -1.5rem;
+}
+
+.home-packages .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-packages .box-container .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-packages .box-container .btn:hover {
+    background-color: #0056b3;
+}
+
+.home-packages .load-more .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #bb262b;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.home-packages .load-more .btn:hover {
+    background-color: #5b0707;
+}
+
+/* Home offer Section */
+.home-offer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.home-offer .content{
+    max-width: 70rem;
+}
+.home-offer .content h3{
+    color: black;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+.home-offer .content p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.home-offer .content .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-offer .content .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+    .heading-title {
+        font-size: 3.5rem;
+    }
+
+    .home-about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-about .image {
+        max-width: 80%;
+    }
+
+    .home-about .image img {
+        height: auto;
+    }
+
+    .home-about .content {
+        width: 90%;
+        padding: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading-title {
+        font-size: 3.3rem;
+    }
+
+    .home-about .image {
+        max-width: 100%;
+    }
+
+    .home-about .content {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home-about .content p {
+        font-size: 1.2rem;
+    }
+
+    .home-about .content .btn {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    .home-offer .content h3{
+        font-size: 2.5rem;
+
+    }
+
+    .home-offer .content p{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .heading-title {
+        font-size: 2rem;
+    }
+
+    .home-about .content p {
+        font-size: 1rem;
+        /* Further reduce font size for very small screens */
+    }
+
+    .home-about .content .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        /* Further adjust button padding */
+    }
+
+    .home-offer .content h3{
+        font-size: 2rem;
+    }
+
+    .home-offer .content p{
+        font-size: 0.8rem;
+    }
+}
