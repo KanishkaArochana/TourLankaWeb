@@ -101,3 +101,69 @@ body {
     font-size: 1rem;
     color: #333;
 }
+
+/* Reviews Section  */
+
+.reviews {
+    background-color: white;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.reviews .swiper-wrapper {
+    display: flex;
+    /* align-items: center; */
+}
+
+.reviews .swiper-slide {
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    box-shadow: #ddd;
+    max-width: 300px;
+    max-height: auto;
+    overflow: hidden;
+    margin: 0;
+    user-select: none;
+
+}
+
+.reviews .swiper-slide .stars {
+    margin-top: 2rem;
+}
+
+.reviews .swiper-slide .stars i {
+    font-size: 1.4rem;
+    color: gold;
+}
+
+.reviews .swiper-slide p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    max-height: 100px;
+    overflow: hidden;
+    /* Hide overflowed text */
+}
+
+.reviews .swiper-slide h3 {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: -.5rem;
+}
+
+.reviews span {
+    font-size: 1rem;
+    color: black;
+    display: block;
+}
+
+.reviews .swiper-slide img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
