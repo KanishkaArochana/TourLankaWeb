@@ -4,3 +4,100 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+.heading {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.heading img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.heading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #007bff;
+    font-size: 6rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about .image {
+    width: 40%;
+}
+
+.about .image img {
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+
+}
+
+.about .content {
+    width: 50%;
+    text-align: center;
+}
+
+.about .content h3 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.about .content .icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.about .content .icons-container .icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.about .content .icons-container .icons i {
+    font-size: 1rem;
+    color: #007BFF;
+    margin-bottom: 0.5rem;
+}
+
+.about .content .icons-container .icons span {
+    font-size: 1rem;
+    color: #333;
+}
