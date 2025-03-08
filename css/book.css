@@ -99,3 +99,30 @@ body {
 .booking .book-form .btn:hover {
     background-color: #0056b3;
 }
+
+/* Responsive adjustments */
+
+@media (max-width: 991px) {
+    .booking .book-form .flex .inputBox {
+        flex: 1 1 100%; 
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .booking .book-form .btn {
+        font-size: 1.2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking .book-form .flex .inputBox {
+        flex: 1 1 100%; 
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .booking .book-form .flex {
+        gap: 1rem; 
+    }
+}
