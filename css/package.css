@@ -32,3 +32,108 @@ body {
     border-radius: 10px;
     
 }
+
+
+/* Packages section */
+.packages .heading-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1rem));
+    gap: 3rem;
+    justify-content: center;
+    
+}
+
+.packages .box-container .box{
+    background-color: #dadcda;
+    border: 1px black solid;
+    display: none; /* Initially hidden */
+}
+
+
+.packages .box-container .box:nth-child(-n+3) {
+    display: inline-block; /* Show first 3 boxes */
+}
+
+
+.packages .box-container .box .image {
+    height: 18rem;
+    overflow: hidden;
+    margin-bottom: -1.5rem;
+}
+
+.packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: .2s linear;
+}
+
+.packages .box-container .box .image img:hover{
+    transform: scale(1.5);
+}
+
+.packages .box-container .box .content {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.packages .box-container .box .content p {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: -1.5rem;
+}
+
+.packages .load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.content .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.content .btn:hover {
+    background-color: #0056b3;
+}
+
+.packages .load-more .btn{
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.packages .load-more .btn:hover {
+    background-color: #0056b3;
+}
