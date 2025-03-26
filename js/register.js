@@ -34,4 +34,17 @@ document.getElementById('register-form').addEventListener('submit', function(eve
     alert('Registration successful!');
 });
 
+// Profile Picture Preview
+document.getElementById('profile-pic').addEventListener('change', function(event) {
+    let file = event.target.files[0];
 
+    if (file) {
+        let reader = new FileReader();
+
+        reader.onload = function(e) {
+            document.getElementById('preview-img').src = e.target.result;
+        };
+
+        reader.readAsDataURL(file);
+    }
+});
