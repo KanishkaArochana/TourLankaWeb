@@ -123,3 +123,28 @@ button {
     background-color: #218838;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
