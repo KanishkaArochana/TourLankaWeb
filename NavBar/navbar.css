@@ -85,3 +85,60 @@
     color: black;
     display: none;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 2rem;
+        display: none;
+        flex-direction: column;
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    .user-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    .header {
+        padding: 3rem 1rem;
+    }
+}
