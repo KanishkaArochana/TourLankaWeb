@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Travel & Tour</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Side Navigation Bar -->
+    <div class="sidenav">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><button onclick="navigate('dashboard')">Dashboard</button></li>
+            <li><button onclick="navigate('userManagement')">User Management</button></li>
+            <li><button onclick="navigate('tourPackages')">Tour Packages Management</button></li>
+            <li><button onclick="navigate('bookingManagement')">Booking Management</button></li>
+            <li><button onclick="navigate('feedbackManagement')">Feedback Management</button></li>
+            <li><button onclick="navigate('settings')">Settings</button></li>
+            <li><button onclick="navigate('logout')">Logout</button></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>Welcome to Admin Panel</h1>
+        <div id="contentArea">
+            <p>Select a section from the side navigation to manage.</p>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
