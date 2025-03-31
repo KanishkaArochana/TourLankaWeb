@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Travel & Tour</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .swal2-popup {
+            width: 400px !important;
+        }
+        .swal2-input {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function showLoginForm() {
+            Swal.fire({
+                title: 'Login',
+                html: `
+                    <input type="email" id="email" class="swal2-input" placeholder="Enter your email">
+                    <input type="password" id="password" class="swal2-input" placeholder="Enter your password">
+                    <label style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+                        <input type="checkbox" id="rememberMe"> Remember me
+                    </label>
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Login',
+                preConfirm: () => {
+                    const email = document.getElementById('email').value.trim();
+                    const password = document.getElementById('password').value.trim();
+                    
+                    if (!email) {
+                        Swal.showValidationMessage('Email is required!');
+                        return false;
+                    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                        Swal.showValidationMessage('Invalid email format!');
+                        return false;
+                    }
+
+                    if (!password) {
+                        Swal.showValidationMessage('Password is required!');
+                        return false;
+                    } else if (password.length < 6) {
+                        Swal.showValidationMessage('Password must be at least 6 characters!');
+                        return false;
+                    }
+
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: 'Login successful!',
+                    });
+                }
+            });
+        }
+
+        window.onload = showLoginForm;
+    </script>
+</body>
+</html>
