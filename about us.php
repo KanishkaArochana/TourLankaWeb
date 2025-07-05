@@ -19,6 +19,8 @@
 
 <body>
 
+<?php include("navbar.php"); ?>
+
     <div class="heading">
         <img src="./assets/about bg.jpg" alt="">
         <h1>About Us</h1>

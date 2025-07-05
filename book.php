@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/book.css">
 </head>
 <body>
+    <?php include("navbar.php"); ?>
+    
     <div class="heading">
         <img src="./assets/about bg.jpg" alt="">
         <h1>BOOKING</h1>
